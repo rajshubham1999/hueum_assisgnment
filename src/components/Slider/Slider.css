@@ -1,0 +1,34 @@
+.slider-container{
+    width:100vw;
+    text-align: center;
+    
+    height:80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.second-navbar{
+    text-align: center;
+    width:500px;
+    height:45px;
+    
+    border-radius: 60px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+
+
+}
+.slider-button{
+    margin:10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+
+}
+.slider-button:hover{
+    cursor: pointer;
+    background-color: rgba(181, 131, 131, 0.108);
+    border-radius: 20px;
+
+}

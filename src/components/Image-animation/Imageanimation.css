@@ -1,0 +1,258 @@
+
+  
+  .App {
+    text-align: center;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: relative;
+    transition: transform 0.5s ease;
+    flex-shrink: 0;
+  }
+  
+  .slide img {
+    max-width: 800px;
+    transition: transform 0.5s ease;
+  }
+  
+  .left {
+    transform: scale(1.3) translateX(-30%);
+  }
+  
+  .center {
+    z-index: 1;
+    transform: scale(1);
+  }
+  
+  .right {
+    transform: scale(1.3) translateX(30%);
+  }
+  
+  .second-half{
+    width:100vw;
+    height:1000px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .discover{
+    width:850px;
+    height:180px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .discover-text1{
+    width:500px;
+    height:80px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .discover-text1>p{
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .discover-text2{
+    width:700px;
+    height:80px;
+    
+    display: flex;
+    align-items: center;
+    
+
+  }
+  .discover-text2>img{
+   
+    width:300px;
+    height:80px
+  }
+  .discover-text2>p{
+    
+    height:70px;
+    width:400px;
+    font-size: 50px;
+    font-weight: bold;
+
+  }
+  .two-container{
+    margin-top: 40px;
+    width:100vw;
+    height:740px;
+    
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .first{
+    height:700px;
+    width:680px;
+    
+  }
+  .first>img{
+    height:700px;
+  }
+  .second{
+    height:700px;
+    width:680px;
+   
+  }
+  .second>img{
+    height:700px;
+  }
+  .fourth-half{
+    width:100vw;
+    height:210px;
+    
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fast-way{
+    width:800px;
+    height:210px;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .upper{
+    width:630px;
+    height:100px;
+   
+    display: flex;
+   
+   align-items: center;
+  }
+  .upper>img{
+    width:250px;
+    height:100px;
+   
+    
+  }
+  .first-text{
+    height:100px;
+    width:100px;
+   
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .second-text{
+    height:100px;
+    width:250px;
+  
+    font-size:50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .second-upper-text{
+    height:100px;
+    width:500px;
+   
+    margin:0
+  }
+  .second-upper-text{
+  
+    font-size:50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .video-container {
+    margin-top: 30px;
+    margin: 20px;
+    padding: 0;
+    width: 1300px;
+    height: 790px;
+  
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+    border-radius: 10px ;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+  }
+  
+  .animation-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100vw;
+    height: 600px; 
+    align-items: center; 
+    
+    flex-direction: column;
+  
+  }
+  .text-animation{
+    width:600px;
+    height:120px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .prioritise{
+    width:250px;
+    height:60px;
+
+    display:flex;
+   padding:5px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .normal-text{
+    width:400px;
+    height:90px;
+   
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+
+
+  
+  .text-animation {
+    position: absolute;
+    top: 0;
+    transition: opacity 0.5s ease, top 0.5s ease;
+  }
+
+
+
+  
