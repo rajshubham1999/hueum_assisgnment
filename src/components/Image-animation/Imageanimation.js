@@ -22,6 +22,15 @@ function Imageanimation() {
   const [sliderVisible, setSliderVisible] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const videoContainerRef = useRef(null);
+  const [discoverTextVisible, setDiscoverTextVisible] = useState(false);
+  const discoverTextRef = useRef(null);
+  const fastImageRef = useRef(null);
+  const [fastImageVisible, setFastImageVisible] = useState(false);
+  const lowerImageRef = useRef(null);
+  const [lowerImageVisible, setLowerImageVisible] = useState(false);
+
+
+
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
@@ -84,6 +93,27 @@ function Imageanimation() {
   }, [scrollY]);
 
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setFastImageVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 } // Adjust this threshold based on when you want the animation to start
+    );
+
+    if (fastImageRef.current) {
+      observer.observe(fastImageRef.current);
+    }
+
+    return () => {
+      if (fastImageRef.current) {
+        observer.unobserve(fastImageRef.current);
+      }
+    };
+  }, []);
+
+
+
   const handleSliderNavigation = (direction) => {
     setActiveIndex((prev) => {
       const newIndex = prev + direction;
@@ -91,6 +121,47 @@ function Imageanimation() {
       return Math.max(0, Math.min(1, newIndex));
     });
   };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setDiscoverTextVisible(entry.isIntersecting);
+      },
+      { threshold: 0.5 } // Adjust this threshold based on when you want the animation to start
+    );
+
+    if (discoverTextRef.current) {
+      observer.observe(discoverTextRef.current);
+    }
+
+    return () => {
+      if (discoverTextRef.current) {
+        observer.unobserve(discoverTextRef.current);
+      }
+    };
+  }, []);
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setLowerImageVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 } // Adjust this threshold based on when you want the animation to start
+    );
+
+    if (lowerImageRef.current) {
+      observer.observe(lowerImageRef.current);
+    }
+
+    return () => {
+      if (lowerImageRef.current) {
+        observer.unobserve(lowerImageRef.current);
+      }
+    };
+  }, []);
+
+
 
   useEffect(() => {
     if (activeIndex === 0) {
@@ -120,7 +191,7 @@ function Imageanimation() {
           <div className='discover-text1'>
             <p>Discover the latest</p>
           </div>
-          <div className='discover-text2'>
+          <div className={`discover-text2 ${discoverTextVisible ? 'animate' : ''}`} ref={discoverTextRef}>
             <img src={update} alt="update" />
             <p>from Chrome</p>
           </div>
@@ -138,7 +209,8 @@ function Imageanimation() {
         <div className='fast-way'>
           <div className='upper'>
             <p className='first-text'>The</p>
-            <img src={fast} />
+            <img src={fast} ref={fastImageRef} className={`fast-image ${fastImageVisible ? 'slide-up' : ''}`} />
+
             <p className='second-text'>way to do</p>
           </div>
           <div className='second-upper'>
@@ -153,7 +225,7 @@ function Imageanimation() {
         <div className='video-container' ref={videoContainerRef} style={{ width: videoSize.width, height: videoSize.height }}>
           <video src={videoFile} autoPlay={videoPlaying} muted loop style={{ transform: `translateY(${videoTranslateY}px)` }} />
         </div>
-        
+
         <div className='text-animation' style={{ opacity: textAnimationVisibility ? 1 : 0, top: textAnimationTop }}>
           <p className='prioritise'>Prioritise Performance</p>
           <p className='normal-text'>
@@ -162,14 +234,15 @@ function Imageanimation() {
         </div>
       </div>
 
-     <div className='build'>
-      <div className='build-upper'>
-        <img src={upper}/>
+      <div className='build'>
+        <div className='build-upper'>
+          <img src={upper} />
+        </div>
+        <div className='build-image' style={{ marginTop: 50 }} ref={lowerImageRef}>
+          <img src={lower} className={lowerImageVisible ? 'visible' : ''} />
+        </div>
+
       </div>
-      <div className='build-image' style={{marginTop:50}}>
-        <img src={lower}/>
-      </div>
-     </div>
 
 
     </div>

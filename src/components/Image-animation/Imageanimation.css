@@ -1,258 +1,453 @@
 
-  
-  .App {
-    text-align: center;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .slide {
-    position: relative;
-    transition: transform 0.5s ease;
-    flex-shrink: 0;
-  }
-  
-  .slide img {
-    max-width: 800px;
-    transition: transform 0.5s ease;
-  }
-  
-  .left {
-    transform: scale(1.3) translateX(-30%);
-  }
-  
-  .center {
-    z-index: 1;
-    transform: scale(1);
-  }
-  
-  .right {
-    transform: scale(1.3) translateX(30%);
-  }
-  
-  .second-half{
-    width:100vw;
-    height:1000px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .discover{
-    width:850px;
-    height:180px;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .discover-text1{
-    width:500px;
-    height:80px;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .discover-text1>p{
-    font-size: 50px;
-    font-weight: bold;
-  }
-  .discover-text2{
-    width:700px;
-    height:80px;
-    
-    display: flex;
-    align-items: center;
-    
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 
-  }
-  .discover-text2>img{
-   
-    width:300px;
-    height:80px
-  }
-  .discover-text2>p{
-    
-    height:70px;
-    width:400px;
-    font-size: 50px;
-    font-weight: bold;
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
 
-  }
-  .two-container{
-    margin-top: 40px;
-    width:100vw;
-    height:740px;
-    
-    display: flex;
-    justify-content: space-around;
-    
-  }
-  .first{
-    height:700px;
-    width:680px;
-    
-  }
-  .first>img{
-    height:700px;
-  }
-  .second{
-    height:700px;
-    width:680px;
-   
-  }
-  .second>img{
-    height:700px;
-  }
-  .fourth-half{
-    width:100vw;
-    height:210px;
-    
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .fast-way{
-    width:800px;
-    height:210px;
-    
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .upper{
-    width:630px;
-    height:100px;
-   
-    display: flex;
-   
-   align-items: center;
-  }
-  .upper>img{
-    width:250px;
-    height:100px;
-   
-    
-  }
-  .first-text{
-    height:100px;
-    width:100px;
-   
-    font-size: 50px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .second-text{
-    height:100px;
-    width:250px;
-  
-    font-size:50px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slide {
+  position: relative;
+  transition: transform 0.5s ease;
+  flex-shrink: 0;
+}
 
-  }
-  .second-upper-text{
-    height:100px;
-    width:500px;
-   
-    margin:0
-  }
-  .second-upper-text{
-  
-    font-size:50px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.slide img {
+  max-width: 800px;
+  transition: transform 0.5s ease;
+}
+
+.left {
+  transform: scale(1.3) translateX(-30%);
+}
+
+.center {
+  z-index: 1;
+  transform: scale(1);
+}
+
+.right {
+  transform: scale(1.3) translateX(30%);
+}
+
+.second-half {
+  width: 100vw;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover {
+  width: 850px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.discover-text1 {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover-text1 > p {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.discover-text2 {
+  width: 700px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.discover-text2 > img {
+  width: 300px;
+  height: 80px;
+}
+
+.discover-text2 > p {
+  height: 70px;
+  width: 400px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.two-container {
+  margin-top: 40px;
+  width: 100vw;
+  height: 740px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.first {
+  height: 700px;
+  width: 680px;
+}
+
+.first > img {
+  height: 700px;
+}
+
+.second {
+  height: 700px;
+  width: 680px;
+}
+
+.second > img {
+  height: 700px;
+}
+
+.fourth-half {
+  width: 100vw;
+  height: 210px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fast-way {
+  width: 800px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upper {
+  width: 630px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.upper > img {
+  width: 250px;
+  height: 100px;
+}
+
+.first-text {
+  height: 100px;
+  width: 100px;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-text {
+  height: 100px;
+  width: 250px;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-upper-text {
+  height: 100px;
+  width: 500px;
+  margin: 0;
+}
+
+.second-upper-text {
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container {
+  margin-top: 30px;
+  margin: 20px;
+  padding: 0;
+  width: 1300px;
+  height: 790px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 10px;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.animation-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100vw;
+  height: 600px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-animation {
+  width: 600px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.prioritise {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.normal-text {
+  width: 400px;
+  height: 90px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.text-animation {
+  position: absolute;
+  top: 0;
+  transition: opacity 0.5s ease, top 0.5s ease;
+}
+
+.discover-text2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.discover-text2.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fast-image {
+  transform: translateY(100px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.fast-image.slide-up {
+  transform: translateY(0);
+}
+
+.build-image img {
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+}
+
+.build-image img.visible {
+  opacity: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
   .video-container {
-    margin-top: 30px;
-    margin: 20px;
-    padding: 0;
-    width: 1300px;
-    height: 790px;
-  
-    display: flex;
-    align-items: flex-start; 
-    justify-content: center;
-    border-radius: 10px ;
-    flex-direction: column;
-    overflow: hidden;
+    width: 1000px;
+    height: 600px;
   }
-  
-  .video-container video {
+
+  .upper {
+    width: 500px;
+    height: 80px;
+  }
+
+  .upper > img {
+    width: 200px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .video-container {
+    width: 800px;
+    height: 500px;
+  }
+
+  .upper {
+    width: 400px;
+    height: 70px;
+  }
+
+  .upper > img {
+    width: 150px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    width: 600px;
+    height: 400px;
+  }
+
+  .upper {
+    width: 300px;
+    height: 60px;
+  }
+
+  .upper > img {
+    width: 120px;
+    height: 60px;
+  }
+
+  .discover {
+    width: 600px;
+    height: 150px;
+  }
+
+  .discover-text1 {
+    width: 400px;
+    height: 70px;
+  }
+
+  .discover-text1 > p {
+    font-size: 40px;
+  }
+
+  .discover-text2 {
+    width: 500px;
+    height: 70px;
+  }
+
+  .discover-text2 > img {
+    width: 250px;
+    height: 70px;
+  }
+
+  .discover-text2 > p {
+    height: 60px;
+    width: 300px;
+    font-size: 40px;
+  }
+
+  .two-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first, .second {
+    width: 90%;
+    height: auto;
+  }
+
+  .first > img, .second > img {
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex; 
+    height: auto;
   }
-  
-  .animation-container {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 100vw;
-    height: 600px; 
-    align-items: center; 
-    
-    flex-direction: column;
-  
-  }
-  .text-animation{
-    width:600px;
-    height:120px;
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-  }
-  .prioritise{
-    width:250px;
-    height:60px;
 
-    display:flex;
-   padding:5px;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
+  .fourth-half, .fast-way {
+    width: 90%;
+    height: auto;
   }
-  .normal-text{
-    width:400px;
-    height:90px;
-   
-    font-size: 15px;
-    display: flex;
-    align-items: center;
-  }
-  
-  
 
-
-  
   .text-animation {
-    position: absolute;
-    top: 0;
-    transition: opacity 0.5s ease, top 0.5s ease;
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .video-container {
+    width: 400px;
+    height: 300px;
   }
 
+  .upper {
+    width: 250px;
+    height: 50px;
+  }
 
+  .upper > img {
+    width: 100px;
+    height: 50px;
+  }
 
-  
+  .discover {
+    width: 90%;
+    height: auto;
+  }
+
+  .discover-text1 {
+    width: 300px;
+    height: 60px;
+  }
+
+  .discover-text1 > p {
+    font-size: 30px;
+  }
+
+  .discover-text2 {
+    width: 400px;
+    height: 60px;
+  }
+
+  .discover-text2 > img {
+    width: 200px;
+    height: 60px;
+  }
+
+  .discover-text2 > p {
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+  }
+
+  .two-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first, .second {
+    width: 90%;
+    height: auto;
+  }
+
+  .first > img, .second > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fourth-half, .fast-way {
+    width: 90%;
+    height: auto;
+  }
+
+  .text-animation {
+    width: 90%;
+    height: auto;
+  }
+}
